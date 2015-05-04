@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+
+  <title>MapJam Deck Presentation</title>
+
+  <!-- Required stylesheet -->
+  <link rel="stylesheet" media="screen" href="core/deck.core.css">
+
+  <!-- Extension CSS files go here. Remove or add as needed. -->
+  <link rel="stylesheet" media="screen" href="extensions/goto/deck.goto.css">
+  <link rel="stylesheet" media="screen" href="extensions/menu/deck.menu.css">
+  <link rel="stylesheet" media="screen" href="extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" media="screen" href="extensions/status/deck.status.css">
+  <link rel="stylesheet" media="screen" href="extensions/scale/deck.scale.css">
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/style/web-2.0.css">
+
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/transition/horizontal-slide.css">
+
+  <!-- Basic black and white print styles -->
+  <link rel="stylesheet" media="print" href="core/print.css">
+
+  <!-- Required Modernizr file -->
+  <script src="modernizr.custom.js"></script>
+</head>
+<style> 
+.city {
+float: left;
+margin: 5px;
+padding: 15px;
+width: 400px;
+height: 300px;
+} 
+#header {
+	clear:both;
+    text-align:center;
+    padding:5px;
+}
+#section {
+	float:left;
+	height:400px;
+	width:800px;
+    padding:10px; 
+}
+#footer {
+    color:red;
+    clear:both;
+    text-align:center;
+   padding:5px;	 	 
+}
+</style>
+<body>
+  <div class="deck-container">
+
+    <!-- Begin slides. Just make elements with a class of slide. -->
+
+    <section class="slide">
+	  <img src="logo_hires.jpg" alt = "MapJam Logo All Rights Reserved 2013" width="100%" height="400" />
+	  <p style="text-align:center">Making events simple.</p>
+	  <div id="footer">
+	  mapjam.co.ke
+	  </div>
+    </section>
+
+    <section class="slide">
+	  <div id="header">
+		  <img src="logo_hires.jpg" alt = "MapJam Logo All Rights Reserved 2013" width="300" height="100" />
+	  </div>
+	  <h2 style="text-align:center">Who we are.</h2>
+	  <div>
+		  <p style="text-align:center">
+	      MapJam is automating the ~billion dollar event and entertainment market in Kenya.
+		  </p>
+	   </div>
+	  <div id="footer">
+	  mapjam.co.ke
+	  </div>
+    </section>
+
+    <section class="slide">
+	  <div id="header">
+		  <img src="logo_hires.jpg" alt = "MapJam Logo All Rights Reserved 2013" width="300" height="100" />
+	  </div>
+	  <div>
+		  <h2 style="text-align:center">What we do.</h2>
+	  <p style="text-align:center">
+	      MapJam solves the problem of how to contract event service providers + performing artists.
+	  </p>
+  </div>
+	  <div id="footer">
+	  mapjam.co.ke
+	  </div>
+    </section>
+	
+    <section class="slide">
+  	  <div id="header">
+  		  <img src="logo_hires.jpg" alt = "MapJam Logo All Rights Reserved 2013" width="300" height="100" />
+  	  </div>
+      <h2 style="text-align:center">Be in touch!</h2>
+	  <div class="city">
+	  <ul style="list-style-type:none">
+		  <li>e: harvey@mapjam.co.ke</li>
+		  <li>m: (+254)711984010</li>
+		  <li>m: (+961)76009806</li>
+		  <li>t: @mapjamming</li>
+	  </ul>
+  </div>
+	  <div id="footer">
+	  mapjam.co.ke
+	  </div>
+    </section>
+
+    <!-- End slides. -->
+
+    <!-- Begin extension snippets. Add or remove as needed. -->
+
+    <!-- deck.navigation snippet -->
+    <div aria-role="navigation">
+      <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+      <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+    </div>
+
+    <!-- deck.status snippet -->
+    <p class="deck-status" aria-role="status">
+      <span class="deck-status-current"></span>
+      /
+      <span class="deck-status-total"></span>
+    </p>
+
+    <!-- deck.goto snippet -->
+    <form action="." method="get" class="goto-form">
+      <label for="goto-slide">Go to slide:</label>
+      <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+      <datalist id="goto-datalist"></datalist>
+      <input type="submit" value="Go">
+    </form>
+
+    <!-- End extension snippets. -->
+  </div>
+
+<!-- Required JS files. -->
+<script src="jquery.min.js"></script>
+<script src="core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="extensions/menu/deck.menu.js"></script>
+<script src="extensions/goto/deck.goto.js"></script>
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/navigation/deck.navigation.js"></script>
+<script src="extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+  $(function() {
+    $.deck('.slide');
+  });
+</script>
+</body>
+</html>
